@@ -1,0 +1,43 @@
+    .cv {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #fae4e4;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .kerja,
+    .sekolah {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .info h1 {
+        margin: 0;
+    }
+
+    .work,
+    .edu,
+    .skill {
+        background-color: #e1dcfa;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+        margin-top: 0;
+    }

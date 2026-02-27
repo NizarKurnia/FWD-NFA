@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* content kiri dan kanan */
+.right,
+.left {
+    overflow: hidden;
+}
+
+.a-left,
+.a-right {
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgb(28, 210, 28);
+}
+
+.a-left:hover,
+.a-right:hover {
+    background-color: rgb(6, 152, 6);
+    color: white;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.f-left,
+.f-right {
+    background-color: #e1dcfa;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* konten main.html */
+.main {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+}
+
+/* konten nav.html */
+.bd-nav {
+    background-color: #e1dcfa;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.a-nav {
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 2px;
+    color: black;
+    text-decoration: none;
+}
+
+.a-nav:hover {
+    background-color: #e3cbfc;
+}
+
+/* konten head dan footer */
+.bd-head,
+.bd-foot {
+    background-color: #e1dcfa;
+    text-align: center;
+    justify-content: center;
+}
+
+/* konten study.html */
+.riwayat-pend {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20vh;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: #98979a;
+}
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: #cecdcf;
+}
+
+/* konten home.html*/
+.content {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 20vh;
+}
+/* konten galeri.html */
+.galeri {
+    background-color: #e6e6e6;
+    padding: 17vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.galeri-marquee img,
+.galeri-marquee iframe {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
