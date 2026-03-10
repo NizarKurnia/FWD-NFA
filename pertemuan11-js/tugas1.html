@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika</title>
+</head>
+
+<body>
+    <script>
+        // judul
+        document.write('<h1 style="text-align: center;">Menghitung Pesegi Panjang, Bujur Sangkar dan Segitiga</h1>');
+
+        document.write("<hr>");
+
+        // Persegi Panjang
+        document.write("<h3>Persegi Panjang</h3>");
+        // Variable persegi panjang
+        let panjang = 7;
+        let lebar = 4;
+        // Rumus persegi panjang
+        let luas = panjang * lebar;
+        let kel = 2 * (panjang + lebar);
+        // Cetak hasil
+        document.write("Panjang: " + panjang + "<br>" + "Lebar: " + lebar + "<br>");
+        document.write("keliling = 2 x (" + panjang + " + " + lebar + ") = " + kel + "<br>");
+        document.write("Luas = " + panjang + " x " + lebar + " = " + luas);
+
+        document.write("<hr>");
+
+        // Bujur Sangkar
+        document.write("<h3>Bujur Sangkar</h3>");
+        // Variable bujur sangkar
+        let sisi = 5;
+        // Rumus bujur sangkar
+        let luasbs = sisi * sisi;
+        let kelbs = sisi + sisi + sisi + sisi;
+        // Cetak hasil
+        document.write("Sisi: " + sisi + "<br>");
+        document.write("keliling = " + sisi + " + " + sisi + " + " + sisi + " + " + sisi + " = " + kelbs + "<br>");
+        document.write("Luas = " + sisi + " x " + sisi + " = " + luasbs);
+
+        document.write("<hr>");
+
+        // Segitiga sama sisi
+        document.write("<h3>Segitiga sama sisi</h3>");
+        // variable segitiga sama sisi
+        let alas = 10;
+        let tinggi = 6;
+        // Rumus segitiga sama sisi
+        let kelsg = alas + alas + alas;
+        let luassg = 0.5 * alas * tinggi;
+        // Cetak hasil
+        document.write("Alas: " + alas + "<br>" + "Tinggi: " + tinggi + "<br>");
+        document.write("keliling = " + alas + " + " + alas + " + " + alas + " = " + kelsg + "<br>");
+        document.write("Luas = 0.5 x (" + alas + " x " + tinggi + ") = " + luassg);
+    </script>
+</body>
+
+</html>
