@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 40vh;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead, tfoot {
+        background-color: #f2f2f2;
+        text-align: center;
+    }
+
+    tbody {
+        text-align: center;
+    }
+
+     td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <script>
+        let Nama = "Dodi Prayodi";
+        let Umur = 20;
+        let Jabatan = "Manager";
+        let Status = "Menikah";
+
+        if (Jabatan == "Manager") {
+            Gaji = 15000000;
+        } else if (Jabatan == "Asisten Manager") {
+            Gaji = 10000000;
+        } else if (Jabatan == "Staff") {
+            Gaji = 5000000;
+        } else {
+            Gaji = "";
+        }
+
+        let Tunjangan_kerja = 0.15 * Gaji;
+        let BPJS = 0.10 * Gaji;
+        let Tunjangan_Keluarga = (Status == "Menikah") ? 0.20 * Gaji : 0;
+        let Total_Gaji = Gaji + Tunjangan_kerja + Tunjangan_Keluarga - BPJS;
+
+        document.write(`
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Umur</td>
+                        <td>Jabatan</td>
+                        <td>Status</td>
+                        <td>Gaji</td>
+                        <td>Tunjangan Kerja</td>
+                        <td>Tunjangan Keluarga</td>
+                        <td>BPJS</td>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>${Nama}</td>
+                            <td>${Umur}</td>
+                            <td>${Jabatan}</td>
+                            <td>${Status}</td>
+                            <td>${Gaji}</td>
+                            <td>${Tunjangan_kerja}</td>
+                            <td>${Tunjangan_Keluarga}</td>
+                            <td>${"-" + BPJS}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">Total Gaji</td>
+                            <td>${Total_Gaji}</td>
+                        </tr>
+                    </tfoot>
+                </thead>
+            </table>
+        `);
+
+    </script>
+</body>
+    
+</html>
