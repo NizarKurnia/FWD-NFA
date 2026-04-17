@@ -1,0 +1,3 @@
+[submodule "booksales-api"]
+	path = booksales-api
+	url = https://github.com/NizarKurnia/booksales-api-laravel.git
